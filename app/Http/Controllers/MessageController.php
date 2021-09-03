@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Quack;
+use App\Models\Message;
 use Illuminate\Http\Request;
 
-class QuackController extends Controller
+class MessageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class QuackController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Quack  $quack
+     * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function show(Quack $quack)
+    public function show(Message $message)
     {
         //
     }
@@ -52,10 +52,10 @@ class QuackController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Quack  $quack
+     * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function edit(Quack $quack)
+    public function edit(Message $message)
     {
         //
     }
@@ -64,10 +64,10 @@ class QuackController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Quack  $quack
+     * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Quack $quack)
+    public function update(Request $request, Message $message)
     {
         //
     }
@@ -75,10 +75,10 @@ class QuackController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Quack  $quack
+     * @param  \App\Models\Message $message
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Quack $quack)
+    public function destroy(Message $message)
     {
         //
     }

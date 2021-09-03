@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/user',App\Http\Controllers\UserController::class)->except('create');
+Route::resource('/message',App\Http\Controllers\MessageController::class);
+Route::resource('/comment',App\Http\Controllers\CommentController::class);
